@@ -1,0 +1,23 @@
+@mixin font($fw, $fs, $lh, $ls, $ta) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-align: $ta;
+}
+
+@mixin flex($dspl: flex, $ai: center, $jc: center) {
+  display: $dspl;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin footer-flex($dspl: inline-flex, $fd: column) {
+  display: $dspl;
+  flex-direction: $fd;
+}
+
+@mixin section($pt: 94px, $pb: 94px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
