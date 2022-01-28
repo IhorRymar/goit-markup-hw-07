@@ -1,0 +1,36 @@
+.cntc-list {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.cntc-list__link {
+  @include font(500, null, 1.14, 0.02em, null);
+  padding: 10px 0 10px 0;
+  max-width: 161px;
+  max-height: 16px;
+  color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  @include flex();
+  transition: color var(--primary-transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.mail-link {
+  margin-right: 50px;
+}
+
+.cntc-list__icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.cntc-list__icon {
+  fill: inherit;
+}

@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  @include font(bold, 26px, 1.19, null, null);
+  color: var(--primary-color);
+}
